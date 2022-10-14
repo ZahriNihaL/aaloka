@@ -1,0 +1,28 @@
+body{
+  font-family: 'Poppins';
+  }
+  
+  :root {
+    /* --primary: #f04770;
+    --primary-rgb: 240, 71, 112;
+    --secondary: #e4e5e7;
+    --violet: #582be7; */
+  
+    --bs-primary: var(--primary);
+    --bs-primary-rgb: var(--primary-rgb);
+  
+    --bs-success: #06d7a0;
+    --bs-success-rgb: 6, 215, 160;
+    font-family: 'Poppins';
+    font-size: 14px;
+  }
+  
+
+.login-page .card-body{
+    background-color: #FEB700;
+
+  }
+  .login-page .card-body .btn{
+    color: #FEB700;
+    background-color: rgb(41, 14, 6);
+  }

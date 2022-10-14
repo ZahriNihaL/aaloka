@@ -1,0 +1,1220 @@
+ body{
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+
+/*.nav-section{
+    width: 100%;
+    height: 90vh;
+    background-color: #FEB700;
+}
+.navbar .nav-item .nav-link{
+    color: rgb(0, 0, 0);
+}
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link.active{
+    font-weight: bold;
+} */
+.navbar .nav-item .nav-link{
+    color: rgb(20, 20, 20);
+}
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link.active{
+    color: black;
+    font-weight: bold;
+}
+.navbar .dropdown .dropdown-menu{
+    background-color: #f8bf2f;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: -200px;
+    padding: 30px;
+    font-size: 13px;
+    border-radius: 0;
+    border: 0;
+    transition: 0.3s ease;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item{
+    color: #000000;
+    transition: 0.3s ease;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover, .navbar .dropdown .dropdown-menu .dropdown-item:focus, .navbar .dropdown .dropdown-menu .dropdown-item.active{
+    font-weight: bold;
+    background-color: transparent;
+}
+.navbar .contact-btn{
+    color: #FEB700!important;
+    background-color: #232323;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+/* -----------------------common elements---------------------- */
+
+.content-color{
+    color: rgb(177, 174, 174);
+    text-align: justify;
+}
+.underline{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.yellow-bg{
+    background-color: #FEB700;
+}
+.yellow-color{
+    color: #FEB700;
+    font-weight: normal;
+}
+
+
+/* -------------------------------animation for button------------------------------- */
+
+@keyframes wobble-horizontal {
+    16.65% {
+      transform: translateX(8px);
+    }
+    33.3% {
+      transform: translateX(-6px);
+    }
+    49.95% {
+      transform: translateX(4px);
+    }
+    66.6% {
+      transform: translateX(-2px);
+    }
+    83.25% {
+      transform: translateX(1px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .wobble-horizontal {
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+  }
+  .wobble-horizontal:hover {
+    animation-name: wobble-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+  /* -------------------------------animation for button------------------------------- */
+
+
+
+
+
+/* -----------------------common elements---------------------- */
+
+
+.home{
+    margin: 0 auto;
+    padding-top: 150px;
+    background-color: #FEB700;
+    padding-bottom: 150px;
+}
+
+.home h1{
+    font-size: 50px;
+    color: black;
+}
+.home p{
+    font-size: 22px;
+    color: rgb(61, 61, 61);
+    
+}
+.home button{
+    color: #FEB700;
+    background-color: #232323;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+.home button:hover{
+    color: #FEB700;
+}
+.home img{
+    height: 92vh;
+    width: auto;
+    position: absolute;
+    top: 54px;
+    bottom: 2px;
+    right: 50px;
+}
+.home .home-icons{
+    margin-top: 50px;
+}
+.home .home-icons a svg{
+    color: black;
+    margin-right: 30px;
+    width: 20px;
+    height: auto;
+    transition: 0.3s ease;
+}
+.home .home-icons a svg:hover{
+    opacity: 0.7;
+}
+@media (max-width: 600px){
+    .home{
+        margin-top: 90px;
+    }
+    .home img{
+        height: 40vh;
+        width: auto;
+        margin-top: 450px;
+    }
+}
+
+
+
+/* -- ------------------------------------about start---------------------------------------------- -- */
+
+.about{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #292828;
+}
+.about h3{
+    color: white;
+}
+/* .about p{
+    margin-top: 10px;
+} */
+.about  button{
+    background-color: #FEB700;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+.about  button:hover{
+    color: #ffffff;
+}
+@media (max-width: 600px){
+    .about{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* -- ------------------------------------about end---------------------------------------------- -- */
+
+
+
+
+
+/* -- ------------------------------------services start---------------------------------------------- -- */
+
+
+.services{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #232323;
+    position: relative;
+}
+.services .service-cards{
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.services .service-cards .card{
+    background-color: #1E1F21;
+    border-radius: 27px;
+    padding: 10px;
+    height: 100%;
+    border: 0;
+    transition: 0.5s ease;
+}
+.services .service-cards .card:hover{
+    background-color: #262929;
+}
+.services .service-cards .card svg{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.services .service-cards .card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.services .service-cards .card a:hover{
+    color: rgb(175, 171, 171);
+}
+.services .service-cards .service-card-bg{
+    padding: 5px;
+    background-color: #FEB700;
+    width: 20%;
+    border-radius: 27px;
+    height: 100%;
+}
+.services .service-img-bg1{
+    opacity: 0.1;
+    position: absolute;
+    top: 50;
+    right: 0;
+}
+.services .service-img-bg2{
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media (max-width: 600px){
+    .services{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services .card-top-gap{
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+}
+
+
+
+
+/* -- ------------------------------------services end---------------------------------------------- -- */
+
+
+
+
+
+
+
+/* -- ------------------------------------services-page start---------------------------------------------- -- */
+
+
+.services-page{
+    /* padding-top: 150px; */
+    padding-bottom: 100px;
+    background-color: #232323;
+}
+.services-header{
+    background-image: url("../images/services/service-head.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+
+@media (max-width: 600px){
+    .services-page .services-page-cards .top-margin{
+        margin-top: 130px;
+    }
+    .services-header{
+        background-size: contain;
+        height: 50vh;
+        /* height: 20vh; */
+        /* padding-top: 100px; */
+    }
+    .services-page .container{
+        margin-top: -80px;
+    }
+}
+
+.services-page .services-page-cards{
+    padding-top: 150px;
+}
+.services-page .container{
+    padding-top: 100px;
+}
+.services-page .services-page-cards .card{
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    padding: 0px 15px 15px 15px;
+    transition: 0.5s ease;
+}
+.services-page .m-top{
+    margin-top: 130px;
+}
+.services-page .services-page-cards .card:hover{
+    background-color: #1b1a1a;
+}
+.services-page .services-page-cards .card button{
+    background-color: #bb9534;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    border: 0;
+}
+.services-page .services-page-cards .service-mg img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    margin-top: -100px;
+}
+
+
+/* -- ------------------------------------services-page end---------------------------------------------- -- */
+
+
+
+
+
+
+
+
+
+/* -- ------------------------------------portfolio start---------------------------------------------- -- */
+
+
+.portfolio{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #312E2E; 
+}
+
+.portfolio img{
+    border: 0;
+    opacity:1;
+    border-radius: 0;
+    transition: 1s ease;
+}
+.portfolio .load-more button{
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    transition: 0.5s ease;
+    padding:  6px 10px;
+}
+.portfolio img:hover{
+    
+    opacity:0.8;
+transition: 1s ease;
+}
+.portfolio-details p{
+    width: 50%;
+    text-align: justify;
+}
+.portfolio   .filter-buttons{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.portfolio .portfolio-gallery{
+    position: relative;
+}
+.portfolio   .filter-buttons a .view-all{
+    border: 1px solid rgb(204, 200, 200);
+    transition: 0.3s ease;
+    right: 0;
+    position: absolute;
+    
+}
+@media(max-width: 991px){
+
+    .portfolio-details p{
+        width: 100%;
+        
+    }
+    .portfolio-para{
+        padding: 15px;
+    }
+    .portfolio   .filter-buttons {
+        display: block;
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+    .portfolio-para{
+        padding: 15px;
+    }
+    
+}
+.portfolio  .btn{
+    font-size: 13px;
+    margin-top: 25px;
+    /* margin-bottom: 30px; */
+    border-radius: 0;
+    background-color: transparent;
+}
+
+
+.portfolio  .btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+.portfolio .btn-primary{
+    background-color: transparent;
+    color: rgb(224, 211, 211);
+    border: none;
+}
+.portfolio  .btn-primary:hover, .portfolio  .btn-primary:focus, .portfolio  .btn-primary.active{
+    background-color: transparent;
+    color: #FEB700;
+}
+.portfolio-item{
+    border: 0;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    position: relative;
+}
+.portfolio-img:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* -- ------------------------------------portfolio end---------------------------------------------- -- */
+
+
+
+
+
+
+/* -- ------------------------------------customers start---------------------------------------------- -- */
+
+
+.customers{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #3D3C3C; 
+}
+.customers .customer-logos{
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.customers .customer-logos img{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.customers .customer-logos button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.customers .customer-logos button.active{
+    width: 35px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px){
+    .customer-para{
+        padding: 15px;
+    }
+}
+
+/* -- ------------------------------------customers end---------------------------------------------- -- */
+
+
+
+
+
+/* -- ------------------------------------blog end---------------------------------------------- -- */
+
+.blog{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #212121; 
+}
+.blog .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 27px 27px 0px 0px;
+}
+.blog .card a{
+    color: rgb(228, 218, 218);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.blog .card a:hover{
+    color: #FEB700;
+}
+
+.blog .card{
+    background-color: #201E1E;
+    width: 400px;
+    border-radius:  27px 27px 0px 0px;
+    border: 0;
+}
+.blog .blog-cards{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.blog  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #201E1E;
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    transition: .5s ease;
+  }
+  
+  .blog .blog-cards .card:hover .overlay {
+    height: 60%;
+    border-radius:  27px 27px 27px 27px;
+  }
+  .blog  .view-all{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .blog  .view-all:hover{
+    color: #FEB700;
+  }
+  .blog  svg{
+    margin-left: 10px;
+  }
+  @media (max-width: 600px){
+    .blog-para{
+        padding: 15px;
+    }
+    .blog .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .blog .blog-cards .card:hover .overlay{
+        padding: 15px;
+    }
+  }
+
+
+
+
+/* -- ------------------------------------blog end---------------------------------------------- -- */
+
+
+
+
+
+
+
+/* -- ------------------------------------testimonial start---------------------------------------------- -- */
+
+
+.testimonial{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #212121; 
+}
+@media (max-width: 600px){
+    .testimonial .testimonial-cards .card{
+        width: 100%;
+    }
+}
+.testimonial .testimonial-para{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.testimonial .testimonial-cards .card{
+    background-color: #252323;
+    width: 400px;
+    border-radius: 27px;
+    border: 0;
+}
+.testimonial .testimonial-cards .card img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: -10px
+}
+.testimonial .testimonial-cards .testimonial-card-bg{
+    background-color: #312e2e;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 400px;
+    border-radius: 27px
+}
+.testimonial .testimonial-cards .testimonial-card-bg .testimonial-img-bg{
+    border-radius: 50%;
+    background-color: rgb(83, 76, 76);
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.testimonial .testimonial-cards .card .designation{
+    margin-top: -10px;
+}
+.testimonial .testimonial-carousel{
+    margin-top: 50px;
+}
+.testimonial .testimonial-carousel button.active{
+    width: 35px;
+    border-radius: 50%;
+}
+.testimonial .testimonial-carousel button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.testimonial .testimonial-cards{
+    margin-bottom: 60px;
+}
+
+
+/* -- ------------------------------------testimonial end---------------------------------------------- -- */
+
+
+
+
+
+
+/* -- ------------------------------------team start---------------------------------------------- -- */
+
+.team{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #212121; 
+    justify-content: center;
+}
+.team .team-cards .card{
+    background-color: #1F1F1F;
+    width: 300px;
+    border-radius: 27px;
+    border: 0;
+    transition: 0.5s ease;
+}
+.team .team-cards .card:hover{
+    background-color: #252424;
+}
+.team .team-cards .card p{
+    color: #FEB700;
+}
+.team .team-cards .card img{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.team .team-cards .card .team-card-img-bg{
+    background-color: #725713;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    
+}
+.team .team-cards .card .social-icons a {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-weight: 25px;
+}
+.team .team-carousel{
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.team .team-cards .card .team-card-img-bg-1{
+    /* background-color: rgb(255, 255, 255); */
+    width: 205px;
+    height: 205px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.team .team-cards .card .social-icons a:hover{
+    color: #725713;
+}
+.team  #carousel-indicators{
+    display: none;
+}
+/* .team .team-carousel .carousel-control-prev{
+    position: absolute;
+    left: 0;
+} */
+.team .team-carousel .carousel-control-prev{
+    margin-left: -50px;
+    margin-right: 50px;
+}
+@media (max-width: 600px){
+    .team .team-carousel{
+        padding: 0;
+        justify-content: center;
+    }
+    .team .team-cards .card{
+        margin: 0 auto;
+        margin-bottom: 15px
+    }
+}
+
+
+
+/* -- ------------------------------------team end------------------------------------------------ */
+
+
+
+
+/* -- ------------------------------------contact start------------------------------------------------ */
+
+
+.contact{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #2B2828;
+}
+.contact form{
+    background-color: #302E2E;
+    /* width: 400px; */
+    width: 70%;
+    padding: 30px;
+    border-radius: 27px;
+}
+.contact form input, .contact form textarea{
+    background-color: #343434;
+    border: 0;
+    border-radius: 30px;
+    color: rgb(190, 182, 182);
+    font-size: 13px;
+    padding: 15px;
+}
+.contact form button{
+    background-color: #8f6b10;
+    border: 0;
+    border-radius: 27px;
+    padding: 10px 25px;
+}
+.contact form button:hover{
+    opacity: 0.6;
+}
+.contact .contact-img{
+    margin-top: 60px;
+}
+.contact  .card{
+    background-color: #302e2e;
+    border: 0;
+    border-radius: 27px;
+    height: 200px;
+}
+.contact  .card a{
+    text-decoration: none;
+}
+.contact  .card a:hover{
+    color: #FEB700;
+}
+.contact  .card .contact-address-bg{
+    padding: 30px;
+    height: 100%;
+    background-color: rgb(61, 60, 60);
+    border-radius: 27px;
+    /* padding-bottom: 50px; */
+    
+}
+.contact  .card .contact-address-bg .social-media{
+    justify-content: center;
+}
+.contact  .card .contact-address-bg .social-media a{
+    font-size: 20px;
+    color: #c4931a;
+    padding: 10px;
+}
+.contact  .card .mail img{
+    /* margin-bottom: -65px; */
+    width: 50px;
+    height: auto;
+    opacity: 0.5;
+    /* margin-top: 10px; */
+}
+@media (max-width: 600px){
+    .contact-para{
+        padding: 15px;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .contact  .card .contact-address-bg{
+        height: auto;
+    }
+    .contact  .card{
+        height: auto;
+    }
+    .contact  .mail{
+        margin-bottom: 15px;
+    }
+}
+
+
+/* -- ------------------------------------contact end------------------------------------------------ */
+
+
+
+
+
+
+/* ------------------------------contact page start------------------------------ */
+
+/* -- ------------------------------------contact start------------------------------------------------ */
+
+
+.contact-page{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #2B2828;
+}
+.contact-page form{
+    background-color: #302E2E;
+    /* width: 400px; */
+    width: 500px;
+    padding: 30px;
+    border-radius: 27px;
+    margin: 0 auto;
+}
+.contact-page form input, .contact-page form textarea{
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    color: rgb(190, 182, 182);
+    font-size: 13px;
+    padding: 15px;
+}
+.contact-page form button{
+    background-color: #8f6b10;
+    border: 0;
+    border-radius: 27px;
+    padding: 10px 25px;
+    transition: 0.3s ease;
+}
+
+.contact-page form button:hover{
+    opacity: 0.6;
+}
+.contact-page .contact-img{
+    margin-top: 60px;
+}
+.contact-page  .card{
+    background-color: #302e2e;
+    border: 0;
+    border-radius: 27px;
+    height: 200px;
+}
+.contact-page  .card a{
+    text-decoration: none;
+}
+.contact-page  .card a:hover{
+    color: #FEB700;
+}
+.contact-page  .card .contact-address-bg{
+    padding: 30px;
+    height: 100%;
+    background-color: rgb(61, 60, 60);
+    border-radius: 27px;
+    /* padding-bottom: 50px; */
+    
+}
+.contact-page  .card .contact-address-bg .social-media{
+    justify-content: center;
+}
+.contact-page  .card .contact-address-bg .social-media img{
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+.contact-page  .card .mail img{
+    /* margin-bottom: -65px; */
+    width: 50px;
+    height: auto;
+    /* opacity: 0.5; */
+    /* margin-top: 10px; */
+}
+.contact-page  .contact-icons img{
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.contact-page  .contact-icons h5{
+    margin-top: 15px;
+}
+.contact-page  .contact-icons  p{
+    color: rgb(219, 208, 208);
+}
+.contact-page  iframe{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-page .contact-details{
+    margin-top: 50px;
+}
+.contact-page  a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.contact-page  a:hover{
+    color: #8f6b10;
+}
+
+
+/* -- ------------------------------------contact end------------------------------------------------ */
+
+/* -------------------------------contact page end----------------------------------- */
+
+
+
+
+
+
+
+
+
+/* -- ------------------------------------about-page start------------------------------------------------ */
+
+
+.about-page{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("C:/Works/Websites/aaloka/images/about/2.jpg")
+}
+.about-content-1{
+    padding: 30px;
+    /* background-color: rgb(255, 202, 27); */
+    background-color: #393630;
+
+    border-radius: 27px;
+    margin-top: 240px;
+    width: 350px;
+    right: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.about-page .about-column{
+    position: relative;
+}
+.about-page .about-bg  img{
+    width: 500px;
+    height: auto;
+    margin-top: -50px;
+}
+.about-page .bg-1{
+    width: 300px;
+    height: auto;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.about-customer-carousel{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #444440; 
+ }
+ .about-customer-carousel img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 60px;
+ }
+ .about-customer-carousel button.active{
+    width: 35px;
+    border-radius: 50%;
+}
+.about-customer-carousel button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.story-contents {
+    margin-top: 50px;
+}
+.story{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #3a3a37; 
+}
+.story .story-img img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 27px;
+}
+/* @media (max-width: 600px){
+    .about-content-1{
+        margin-top: 100vh;
+    }
+} */
+@media (max-width: 600px){
+    .about-customer-carousel img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .about-customer-carousel button{
+        margin-bottom: -90px;
+    }
+    .story .story-para{
+        padding: 15px;
+    }
+}
+
+
+
+/* -- ------------------------------------about-page end------------------------------------------------ */
+
+
+
+
+/* -- ------------------------------------footer start------------------------------------------------ */
+
+.footer{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    background-color: #626262; 
+}
+.footer-powered a{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.footer-powered a:hover{
+    color: rgb(177, 133, 12);
+}
+.footer .footer-logo{
+    width: 500px;
+    height: auto;
+}
+.footer  form input{
+    background-color: #4E4E4E;
+    height: 65px;
+    width: 500px;
+    color: rgb(185, 179, 179);
+    border: 0;
+    border-radius: 30px;
+}
+.footer  form  button{
+    width: 300px;
+    height: 65px;
+    margin-left: -50px;
+    border: 0;
+    background-color: #FEB700;
+    border-radius: 30px;
+    border: 0;
+}
+.footer-powered p{
+    font-size: 13px;
+}
+.footer hr{
+    color: #3936309c;
+}
+
+  .footer .footer-service-links {
+    margin: 0 auto;
+    justify-content: center;
+    
+    margin-top: 60px;
+  }
+  .footer .footer-service-links a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+    transition: 0.3s ease;
+  }
+  .footer .footer-service-links a:hover{
+    color: #FEB700;
+  }
+
+
+
+
+  .footer .footer-quick-links {
+    margin: 0 auto;
+    justify-content: center;
+    
+    margin-top: -15px;
+  }
+  .footer .footer-quick-links a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+    transition: 0.3s ease;
+  }
+  .footer .footer-quick-links a:hover{
+    color: #FEB700;
+  }
+    /* .footer-logos{
+        margin-top: 20px;
+    } */
+    .footer-logos i{
+        padding: 10px;
+        font-size: 20px;
+        color: #FEB700;
+        transition: 0.3s ease;
+    }
+    .footer-logos i:hover{
+        color: white;
+    }
+  
+  
+  @media(max-width: 991px){
+    .footer .footer-service-links{
+        flex-wrap: wrap;
+    }
+    .footer  form input{
+        width: 300px;
+    }
+    .footer  form  button{
+        width: 120px;
+    }
+
+    .footer .footer-quick-links{
+        flex-wrap: wrap;
+    }
+  }
+
+  
+
+
+
+/* -- ------------------------------------footer end------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- ------------------------------------move-up-animation start----------------------------------------------- */
+
+img.vert-move {
+    -webkit-animation: mover 2.5s infinite  alternate;
+    animation: mover 2.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+
+/* -- ------------------------------------move-up-animation end------------------------------------------------ */
+
+
