@@ -3,7 +3,9 @@ session_start();
 if (isset($_SESSION["loggedin"])) {
   header("Location:index.php");
 }
+include("includes/db.php");
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
