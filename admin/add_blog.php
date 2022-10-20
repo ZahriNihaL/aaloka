@@ -11,6 +11,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,54 +28,48 @@
 
     <title>Dashboard</title>
 
-
+ 
+    
 </head>
 
 <body>
     <div class="row min-vh-100 g-0">
+
         <?php include("content/navbar.php") ?>
+
         <div class="col-lg-10 wrapper">
+
             <div class="card custom-card-2">
                 <div class="card-body p-3 d-flex align-items-center justify-content-between">
-                    <h5 class="mb-0 fw-bold">CATEGORY</h5>
+                    <h5 class="mb-0 fw-bold">Add Blog</h5>
                 </div>
             </div>
-            <?php
-              if(isset($_GET["error"])){
-              ?>
-              <div class="alert alert-danger text-center mt-2" role="alert">
-                <?php
-                $error = $_GET["error"];
-                echo $error;
-                ?>
-              </div>
-              <?php
-              }else if(isset($_GET["success"])){
-              ?>
-              <div class="alert alert-success text-center mt-2" role="alert">
-                <?php
-                $error = $_GET["success"];
-                echo $error;
-                ?>
-              </div>
-              <?php } ?>
 
-            <div class="card custom-card text-black mt-2">
+            <div class="card custom-card-2 mt-2">
                 <div class="card-body p-4">
                     <form method="post" action="functions/functions.php" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label class="form-label" for="title">Category Name :</label>
-                            <input type="text" class="form-control" name="category_name" id="title" placeholder="Enter Any Category" required>
+                            <label class="form-label" for="title">Title :</label>
+                            <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" required>
                         </div>
-                        
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-success float-end" name="add_category" style="background-color: #7d1128;">SUBMIT</button>
+                            <label class="form-label" for="image">Image :</label>
+                            <input type="file" class="form-control" name="image" id="image" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="description">Description :</label>
+                            <input type="text" class="form-control" name="description" id="description" placeholder="Enter the description" required><br>
+                        </div>
+                        <br>
+                        <div class="mb-3"> 
+                            <button type="submit" class="btn btn-success float-end" name="add_blog" style="background-color:#FEB700;"> Add Blog</button>
                         </div>
                     </form>
-                    
                 </div>
             </div>
+
         </div>
     </div>
 </body>
+
 </html>

@@ -234,11 +234,11 @@
 .services .service-cards .card:hover{
     background-color: #262929;
 }
-.services .service-cards .card svg{
-    color: white;
+.services .service-cards .card img{
+    /* color: white; */
     display: block;
     margin: 0 auto;
-    width: 40px;
+    width: 50px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -985,7 +985,7 @@ transition: 1s ease;
     padding-bottom: 150px;
     background-position: center;
     background-size: cover;
-    background-image: url("C:/Works/Websites/aaloka/images/about/2.jpg")
+    background-image: url("../images/about/2.jpg");
 }
 .about-content-1{
     padding: 30px;
@@ -995,7 +995,9 @@ transition: 1s ease;
     border-radius: 27px;
     margin-top: 240px;
     width: 350px;
-    right: 0;
+    
+
+    
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }

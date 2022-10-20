@@ -1,5 +1,10 @@
 <?php
 
+// session_start();
+// if (!isset($_SESSION["loggedin"])) {
+//   header("Location:login.php");
+// }
+
 include("includes/db.php");
 
 ?>
@@ -36,7 +41,7 @@ include("includes/db.php");
         <div class="card custom-card-2">
           <div class="card-body p-3 d-flex align-items-center justify-content-between">
             <h5 class="mb-0 fw-bold">PORTFOLIO</h5>
-            <a href="add_portfolio.php" class="btn btn-success" style="background-color:#e9b819;">Add Portfolio</a>
+            <a href="add_portfolio.php" class="btn btn-success" style="background-color:#FEB700;">Add Portfolio</a>
           </div>
         </div>
 
@@ -70,29 +75,20 @@ include("includes/db.php");
             $run = mysqli_query($con, $sql);
             while($row = mysqli_fetch_array($run)){
 
-             
-            
               $id = $row["id"];
               $img = $row["img"];
               $name = $row["name"];
               $category_name = $row["category_name"];
-
-
-            $sql = "select * from tbl_category";
-            $run = mysqli_query($con, $sql);
-            while($row = mysqli_fetch_array($run)){
-  
-              $category_name = $row["category_name"];
-
-            }
+              $description = $row["description"];
 
             ?>
               <div class="col-md-3 portfolio">
                 <div class="card">
                   <div class="card-body p-2 text-center">
-                    <img src="assets/images/portfolio/<?php echo $img ?>" class="img-fluid">
+                    <img src="./assets/images/portfolio/<?php echo $img ?>" class="img-fluid">
                     <h4 class="fw-bold mt-2"><?php echo $name ?></h4>
                     <h4 class="fw-bold mt-2"><?php echo $category_name ?></h4>
+                    <div class="fw-bold mt-2"><?php echo $description ?></div>
 
                     <div class="d-flex justify-content-center">
                       <form method="post" action="editportfolio.php">

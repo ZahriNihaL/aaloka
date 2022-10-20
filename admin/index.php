@@ -25,7 +25,7 @@ include("includes/db.php");
         <?php include("content/navbar.php") ?>
         <div class="col-lg-7 wrapper">
             <div class="row mb-4">
-                <div class="col-sm-6 col-md-12 col-xl-5 mb-3 mb-5 mb-7 mb-9">
+                <div class="col-sm-6 col-md-12 col-xl-5 mb-2 ">
                     <div class="custom-card card-left">
                         <div class="card-header">
                             <div class="card-icon"><i class="bi bi-file-earmark-slides"></i></div>
@@ -49,25 +49,25 @@ include("includes/db.php");
                         </div>                       
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-12 col-xl-5 mb-3">
+                <div class="col-sm-6 col-md-12 col-xl-5  mb-2 ">
                     <div class="custom-card card-right">
                         <div class="card-header">
-                            <div class="card-icon"><i class="bi bi-tv"></i></div>
+                            <div class="card-icon"><i class="bi bi-people"></i></div>
                         </div>
                         <div class="card-text">
-                            ABOUT
+                            PORTFOLIO
                             <?php
-                                $dash_query = "SELECT * from tbl_about";
+                                $dash_query = "SELECT * from tbl_portfolio";
                                 $dash_query_run = mysqli_query($con, $dash_query);
-                                if($tbl_about_total = mysqli_num_rows($dash_query_run))
+                                if($tbl_portfolio_total = mysqli_num_rows($dash_query_run))
                                 {
-                                    echo'<h4 class="mb-0"> '.$tbl_about_total.'</h4>';
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.'</h4>';
                                 }
                                 else{
-                                    echo'<h4 class="mb-0"> '.$tbl_about_total.' </h4>';
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.' </h4>';
                                 }
                             ?>
-                        </div>                        
+                        </div>                      
                     </div>
                 </div>
             </div>

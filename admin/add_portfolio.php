@@ -1,8 +1,12 @@
 <?php
 
-
+// session_start();
+// if (!isset($_SESSION["loggedin"])) {
+//     header("Location:login.php");
+// }
 
 include("includes/db.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -60,8 +64,13 @@ include("includes/db.php");
                                 $run = mysqli_query($con, $sql);
 
                                 while ($row = mysqli_fetch_array($run)) {
+
                                     $id = $row["id"];
+                                    $img = $row["img"];
+                                    $name = $row["name"];
                                     $category_name = $row["category_name"];
+                                    $description = $row["description"];
+
                                     
                                 ?>
 
@@ -80,7 +89,7 @@ include("includes/db.php");
                      
                             
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-success float-end" name="add_portfolio" style="background-color: #e9b819;">SUBMIT</button>    
+                                <button type="submit" class="btn btn-success float-end" name="add_portfolio" style="background-color: #FEB700;">SUBMIT</button>    
                             </div>
                     </form>
                 </div>
