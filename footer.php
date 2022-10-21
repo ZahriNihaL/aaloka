@@ -26,9 +26,9 @@
                     <a href="">Home</a>
                     <a href="">About</a>
                     <a href="">Portfolio</a>
-                    <a href="">Blog</a>
+                    <a href="">Blog</a> 
                     <a href="">Contact</a>
-              </div>
+                </div>
 
              <div class="footer-logos text-center">
                 <a href=""><i class="fa fa-facebook-f"></i></a>

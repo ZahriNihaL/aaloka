@@ -48,6 +48,14 @@
     padding: 10px 20px;
     transition: 0.3s ease;
 }
+.navbar .dropdown-btn button{
+    color: #FEB700!important;
+    background-color: #232323;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
 
 /* -----------------------common elements---------------------- */
 
@@ -323,9 +331,10 @@
     }
 }
 
-.services-page .services-page-cards{
+/* .services-page .services-page-cards{
     padding-top: 150px;
-}
+} */
+
 .services-page .container{
     padding-top: 100px;
 }
@@ -338,9 +347,9 @@
     padding: 0px 15px 15px 15px;
     transition: 0.5s ease;
 }
-.services-page .m-top{
-    margin-top: 130px;
-}
+/* .services-page .m-top{
+    margin-bottom: 5px;
+} */
 .services-page .services-page-cards .card:hover{
     background-color: #1b1a1a;
 }
@@ -351,6 +360,9 @@
     padding: 10px 20px;
     transition: 0.3s ease;
     border: 0;
+}
+.services-page .service-mg{
+    margin-top: 200px;
 }
 .services-page .services-page-cards .service-mg img{
     display: block;

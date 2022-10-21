@@ -1,3 +1,8 @@
+<?php
+
+include("admin/includes/db.php");
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -7,80 +12,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <?php include('style.php') ?>
+
     <title>About</title>
+
     <link rel="icon" type="image/x-icon" href="images/aaloka.png">
+
 </head>
 
 <body>
-    <section class="nav-section" style="background-color: #ffffff;">
-        <nav class="navbar navbar-expand-lg navbar-light yellow-bg pt-4 fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#"><img src="images/aaloka-logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link  " aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link about-nav active" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle service-nav" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
-                    </a>
-                    <ul class="dropdown-menu text-justify" aria-labelledby="navbarDropdown">
-                      <div class="row">
-                        <h5 class="text-center mb-4">Explore our Services</h5>
-                        <div class="col-lg-4">
-                            <li><a class="dropdown-item" href="services.html">Photography</a></li>
-                            <li><a class="dropdown-item" href="services.html">Videography</a></li>
-                            <li><a class="dropdown-item" href="services.html">Video Editing</a></li>
-                            <li><a class="dropdown-item" href="services.html">Digital Marketing</a></li>
-                            <li><a class="dropdown-item" href="services.html">Film Production</a></li>
-                            <li><a class="dropdown-item" href="services.html">Film School</a></li>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="images/dropdown.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-4">
-                            <i><h6 class="mt-4 ">Lorem ipsum dolor sit amet consectetur Donec odio lacus, tempus quis placerat a, congue sit
-                                amet dolor</h6></i>
-                        </div>
-                      </div>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link portfolio-nav" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link blog-nav" href="blog.html">Blog</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <a href="contact.html"><button class="btn btn-sm  contact-btn wobble-horizontal" type="submit">Contact</button></a>
-                </form>
-              </div>
-            </div>
-          </nav>
+    
 
-        
-
-
-
-
+<?php include('contents/nav.php') ?>
 
     <!-- ------------------------------------about start---------------------------------------------- -->
-
-
 
         <section class="about-page">
             <div class="container">
@@ -117,52 +63,39 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="row">
+                            <?php
+                                $sql = "select * from tbl_customers";
+                                $run = mysqli_query($con , $sql);
+                                $count = mysqli_num_rows($run);
+
+                                $loop = 0;
+
+                                while($row = mysqli_fetch_array($run)){
+
+                                $loop ++;
+                                $img = $row["image"];
+                            ?>
                             <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
+                                <img src="./admin/assets/images/customers/<?php echo $img ?>" alt="" class="img-fluid">
                             </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
+                            
+                            <?php
+                              if ($loop % 4 == 0 || $loop == $count) {
+                            ?>
+
                         </div>
                       </div>
-                      <div class="carousel-item">
+                      <?php
+                        if ($loop !=  $count) { 
+                      ?>
+                        <div class="carousel-item">
                         <div class="row">
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/customers/customer-1.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                      </div>
+
+                        <?php }
+                            }
+                          }
+                        ?>
+                      
                     </div>
                     <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -238,16 +171,10 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
 
     <!-- ------------------------------------our story end---------------------------------------------- -->
-   
-
-    
 
 
 
