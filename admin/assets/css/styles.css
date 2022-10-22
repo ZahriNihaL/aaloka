@@ -44,6 +44,8 @@
   .profile {
 
     margin-bottom: 2rem;
+    margin: 0 auto;
+    margin-top: 5vh;
 
   }
   
@@ -52,6 +54,10 @@
     width:70px;
     height: 70px;
     flex-shrink: 0;
+    margin-left: 50px;
+    display: block;
+    margin-top: 15px;
+    border-radius: 40px;
 
   }
   
@@ -63,6 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 15px;
 
   }
 
@@ -114,19 +121,31 @@
     padding: 0 5px;
     font-size: 0.9em;
     border-radius: 0 4px 4px 4px;
+    
 
   }
   
-  #sidebar-nav .nav-item .nav-link.active,
-  #sidebar-nav .nav-item .nav-link:hover,
-  #sidebar-nav .nav-item .nav-link:focus
+  #sidebar-nav .nav-item .nav-link.active,  #sidebar-nav .nav-item .nav-link:focus
   {
-
-    color: #e9b819;
+    color: black;
+    background-color: #e9b819;
     font-weight: bold;
+    border-radius: 15px;
+    margin-bottom: 2px;
 
   }
-  
+  #sidebar-nav{
+    padding: 10px;
+    height: 100vh;
+  }
+
+  #sidebar-nav .nav-item .nav-link:hover{
+
+    background-color: #e2e1de ;
+    color: black;
+    border-radius: 15px;
+
+  }
   #sidebar-nav .nav-item .nav-link.active::before,
   #sidebar-nav .nav-item .nav-link:hover::before,
   #sidebar-nav .nav-item .nav-link:focus::before {
@@ -189,14 +208,17 @@
     font-weight: 600;
 
   }
-  
+  .user-icon img{
+    width: 40px;
+    height: auto;
+  }
   .wrapper .custom-card {
 
     border-radius: 12px;
     padding: 1.75rem;
     color: #fff;
     font-weight: 600;
-    height: 100%;
+    height: 180px;
     display: flex;
     flex-direction: column;
 
@@ -238,7 +260,7 @@
 
     background: linear-gradient(45deg,#f0d067 0%, #e9b303 100%);
     box-shadow: 2px 2px 20px #e9b819;
-    height: 250px;
+    /* height: 250px; */
 
   }
   
@@ -246,7 +268,7 @@
     
     background: linear-gradient(45deg,#f0d067 0%, #e9b303 100%);
     box-shadow: 2px 2px 20px #e9b819;
-    height: 250px;
+    /* height: 250px; */
 
   }
   

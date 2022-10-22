@@ -2,6 +2,7 @@
 
 include("includes/db.php");
 
+
 ?>
 
 <!DOCTYPE html>
@@ -103,6 +104,10 @@ include("includes/db.php");
         </div>
     </div>
   </div>
+
+  <script>
+    changeNav("blog-nav");
+  </script>
 </body>
 
 </html>

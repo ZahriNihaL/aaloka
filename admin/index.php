@@ -23,9 +23,49 @@ include("includes/db.php");
 <body> 
     <div class="row min-vh-100 g-0">    
         <?php include("content/navbar.php") ?>
-        <div class="col-lg-7 wrapper">
+
+        <div class="col-lg-10 wrapper">
+            <div class="card custom-card-2 mb-3">
+            <div class="card-body p-3 d-flex align-items-center justify-content-between">
+                <h5 class="mb-0 fw-bold">DASHBOARD</h5>
+                <!-- <a href="add_dashboard.php" class="btn btn-success" style="background-color:#FEB700;">Add Dashboard</a> -->
+                <div class="d-flex">
+                <div class="admin-names me-2">
+                    <h6 class="fw-bold me-0 text-center mt-2">Admin</h6>
+                    <p class="text-left">(Super Admin)</p>
+                </div>
+                <div class="user-icon">
+                    <img src="assets/images/user.png" alt="" class="img-fluid mt-2">
+                </div>
+
+                </div>
+            </div>
+            </div>
+
             <div class="row mb-4">
-                <div class="col-sm-6 col-md-12 col-xl-5 mb-2 ">
+            <div class="col-lg-2 col-md-12 col-xl-2 mb-2 ">
+                    <div class="custom-card card-right">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="bi bi-people"></i></div>
+                        </div>
+                        <div class="card-text">
+                            ABOUT
+                            <?php
+                                $dash_query = "SELECT * from tbl_portfolio";
+                                $dash_query_run = mysqli_query($con, $dash_query);
+                                if($tbl_portfolio_total = mysqli_num_rows($dash_query_run))
+                                {
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.'</h4>';
+                                }
+                                else{
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.' </h4>';
+                                }
+                            ?>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-2 ">
+                <!-- <div class="col-sm-6 col-md-12 col-xl-5 mb-2 "> -->
                     <div class="custom-card card-left">
                         <div class="card-header">
                             <div class="card-icon"><i class="bi bi-file-earmark-slides"></i></div>
@@ -44,12 +84,11 @@ include("includes/db.php");
                                     echo'<h4 class="mb-0"> '.$tbl_home_total.' </h4>';
                                 }
 
-                                
                             ?>
                         </div>                       
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-12 col-xl-5  mb-2 ">
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-2 ">
                     <div class="custom-card card-right">
                         <div class="card-header">
                             <div class="card-icon"><i class="bi bi-people"></i></div>
@@ -70,9 +109,8 @@ include("includes/db.php");
                         </div>                      
                     </div>
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-sm-6 col-md-12 col-xl-5 mb-3">
+
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-3">
                     <div class="custom-card card-left">
                         <div class="card-header">
                             <div class="card-icon"><i class="bi bi-soundwave"></i></div>
@@ -95,13 +133,14 @@ include("includes/db.php");
                         </div>                        
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-12 col-xl-5 mb-3">
+
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-3">
                     <div class="custom-card card-right">
                         <div class="card-header">
                             <div class="card-icon"><i class="bi bi-people"></i></div>
                         </div>
                         <div class="card-text">
-                            PORTFOLIO
+                            CUSTOMERS
                             <?php
                                 $dash_query = "SELECT * from tbl_portfolio";
                                 $dash_query_run = mysqli_query($con, $dash_query);
@@ -116,7 +155,74 @@ include("includes/db.php");
                         </div>                      
                     </div>
                 </div>
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-3">
+                    <div class="custom-card card-left">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="bi bi-soundwave"></i></div>
+                            <button class="btn ms-auto text-white py-0 px-1"></button>
+                        </div>
+                        <div class="card-text">
+                            BLOG
+                            <?php
+                                $dash_query = "SELECT * from tbl_services";
+                                $dash_query_run = mysqli_query($con, $dash_query);
+                                if($tbl_services_total = mysqli_num_rows($dash_query_run))
+                                {
+                                    echo'<h4 class="mb-0"> '.$tbl_services_total.'</h4>';
+                                }
+                                else{
+                                    echo'<h4 class="mb-0"> '.$tbl_services_total.' </h4>';
+                                }
+                            ?>
+                                                       
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-3">
+                    <div class="custom-card card-right">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="bi bi-people"></i></div>
+                        </div>
+                        <div class="card-text">
+                            TESTIMONIAL
+                            <?php
+                                $dash_query = "SELECT * from tbl_portfolio";
+                                $dash_query_run = mysqli_query($con, $dash_query);
+                                if($tbl_portfolio_total = mysqli_num_rows($dash_query_run))
+                                {
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.'</h4>';
+                                }
+                                else{
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.' </h4>';
+                                }
+                            ?>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-xl-2 mb-3">
+                    <div class="custom-card card-right">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="bi bi-people"></i></div>
+                        </div>
+                        <div class="card-text">
+                            TEAM
+                            <?php
+                                $dash_query = "SELECT * from tbl_portfolio";
+                                $dash_query_run = mysqli_query($con, $dash_query);
+                                if($tbl_portfolio_total = mysqli_num_rows($dash_query_run))
+                                {
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.'</h4>';
+                                }
+                                else{
+                                    echo'<h4 class="mb-0"> '.$tbl_portfolio_total.' </h4>';
+                                }
+                            ?>
+                        </div>                      
+                    </div>
+                </div>
+
+                
             </div>
-                      
+        </div>            
         <!-- <div class="col-lg-3 sidebar-right"> -->
             

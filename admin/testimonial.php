@@ -34,6 +34,7 @@ include("includes/db.php");
 </head>
 
 <body>
+  
   <div class="row min-vh-100 g-0">
 
     <?php include("content/navbar.php") ?>
